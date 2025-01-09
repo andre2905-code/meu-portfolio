@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import profileImage from '../assets/andre-reis-web-developer.png';
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 function Header() {
   const [activeLink, SetActiveLink] = useState('sobre');
@@ -46,6 +48,26 @@ function Header() {
           </a>
         </nav>
       </header>
+      <div className="h-full flex items-center justify-center px-8 gap-4">
+        <div className="text-white">
+          <h1 className="text-6xl font-bold">André Reis</h1>
+          <p className="text-2xl text-lime-400">Desenvolvedor full-stack</p>
+
+          <div className="flex gap-4 mt-8">
+            <a href="https://" className="flex items-center gap-2 hover:text-lime-400 transition-all duration-300 ease-in-out">
+              <FaLinkedin size={ 24 }/>
+              Linkedin
+            </a>
+            <a href="https://" className="flex items-center gap-2 hover:text-lime-400 transition-all duration-300 ease-in-out">
+              <FaGithub size={ 24 }/>
+              Github
+            </a>
+          </div>
+        </div>
+        <div>
+          <img src={ profileImage } alt="" />
+        </div>
+      </div>
     </div>
   )
 }
