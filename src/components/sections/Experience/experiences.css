@@ -1,0 +1,13 @@
+#exp-description {
+  position: relative;
+}
+
+#exp-description::after {
+  content: "";
+  position: absolute;
+  background-color: #9ca3afa0;
+  height: 100%;
+  width: 2px;
+  left: -34px;
+  top: 0px;
+}

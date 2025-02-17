@@ -8,7 +8,7 @@ export type ProjectCardProps = {
 function ProjectCard({ projectName, tags, slug, image }: ProjectCardProps) {
   return (
     <div className="rounded-2xl shadow-lg overflow-hidden bg-dark-900 flex flex-col h-full">
-      <img src={ image } alt="" className="w-full object-cover" />
+      <img src={ image } alt="" className="w-full object-cover aspect-square" />
       <div className="p-4 flex flex-col flex-grow">
         <h2 className="text-xl font-bold text-white">{ projectName }</h2>
         <div className="flex flex-wrap mt-2 mb-auto">
@@ -25,4 +25,4 @@ function ProjectCard({ projectName, tags, slug, image }: ProjectCardProps) {
   )
 }
 
-export default ProjectCard;
+export default ProjectCard; 

@@ -21,7 +21,7 @@ function About() {
               nostrum aut?
             </p>
           </div>
-        </div>
+        </div>  
 
         <div className="flex justify-between">
           <h1 className="text-center text-3xl text-white font-bold">
