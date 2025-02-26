@@ -31,7 +31,7 @@ function SoftSkills() {
         <h3 className="text-xl font-bold mb-4">Soft Skills</h3>
         <div className="flex flex-wrap gap-4">
           {softSkills.map((skill) => (
-            <Skill title={ skill.title } />
+            <Skill key={ skill.title } title={ skill.title } />
           ))}
         </div>
       </div>

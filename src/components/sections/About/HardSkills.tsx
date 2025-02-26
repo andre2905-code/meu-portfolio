@@ -7,9 +7,9 @@ import {
   DiPhp,
   DiReact,
 } from "react-icons/di";
-import Skill from "./Skill";
 import { SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import Skill from "./Skill";
 
 const hardSkills = [
   {
@@ -57,7 +57,7 @@ function HardSkills() {
         <h3 className="text-xl font-bold mb-4">Hard Skills</h3>
         <div className="flex flex-wrap gap-4 mb-8">
           {hardSkills.map((skill) => (
-            <Skill title={skill.title} icon={skill.icon} />
+            <Skill key={skill.title} title={skill.title} Icon={skill.icon} />
           ))}
         </div>
       </div>

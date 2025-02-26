@@ -23,7 +23,7 @@ function Experiences() {
     <div>
       <ul>
         {experiences.map((exp) => (
-          <li className="">
+          <li key={ exp.id } className="">
             <div className="flex gap-4">
               <div className="text-sm text-gray-400">{ exp.date }</div>
               <div className="fa-angle-right"><FaAngleRight className="text-green-500" size={ 35 } /></div>
