@@ -1,15 +1,15 @@
 import {
   DiCss3,
   DiHtml5,
-  DiJavascript,
-  DiLaravel,
-  DiMysql,
   DiPhp,
   DiReact,
 } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import Skill from "./Skill";
+import { FaLaravel } from "react-icons/fa";
+import { GrMysql } from "react-icons/gr";
+import { IoLogoJavascript } from "react-icons/io5";
 
 const hardSkills = [
   {
@@ -22,7 +22,7 @@ const hardSkills = [
   },
   {
     title: "Javascript",
-    icon: DiJavascript,
+    icon: IoLogoJavascript,
   },
   {
     title: "Typescript",
@@ -42,11 +42,11 @@ const hardSkills = [
   },
   {
     title: "MySQL",
-    icon: DiMysql,
+    icon: GrMysql,
   },
   {
     title: "Laravel",
-    icon: DiLaravel,
+    icon: FaLaravel,
   },
 ];
 

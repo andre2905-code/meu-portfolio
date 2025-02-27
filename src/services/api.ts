@@ -14,17 +14,10 @@ function getObjectsUrl(type: string): string {
   return `${API_URL}?${params.toString()}`;
 }
 
-const hardSkillsUrl = getObjectsUrl("hard-skills");
 const projectsUrl = getObjectsUrl("projects");
 
 export async function getProjects() {
   const response = await fetch(projectsUrl);
   const projects = await response.json();
   return projects.objects;
-}
-
-export const getHardSkills = async () => {
-  const response = await fetch(hardSkillsUrl);
-  const hardSkills = await response.json();
-  return hardSkills.objects;
 }
