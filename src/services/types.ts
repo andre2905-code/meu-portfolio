@@ -8,3 +8,10 @@ export interface HardSkill {
     icon_name: IconType;     
   };
 }
+
+export interface Project {
+	name: string;
+	html_url: string;
+	languages_url: string;
+	
+}

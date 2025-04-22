@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 type ProjectListProps = {
   metadata: {
-    descricao_do_projeto: string;
+    descricao: string;
     imagem_do_projeto: {
       url: string;
     };
@@ -32,7 +32,8 @@ function ProjectList() {
               projectName={ project.title }
               tags={ (project.metadata.tags).split(',').map(tag => tag.trim()) }
               image={ project.metadata.imagem_do_projeto.url }
-              slug={project.slug}
+							slug={project.slug}
+							descricao={project.metadata.descricao}
             />
           ))}
         </div>

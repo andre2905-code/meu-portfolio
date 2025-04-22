@@ -27,7 +27,7 @@ function Header() {
   return (
     <div className="bg-dark-600 h-screen w-full" id="sobre">
       <header 
-        className="fixed w-full flex justify-between items-center p-8 transition-all duration-500 ease-in-out bg-opacity-50" 
+        className="fixed w-full flex justify-around items-center py-8 px-12 transition-all duration-500 ease-in-out bg-opacity-50" 
         ref={ headerRef }
       >
         <p className="text-green-500 font-bold text-lg">@andresreis</p>
