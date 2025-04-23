@@ -5,10 +5,10 @@ const experiences = [
   {
     id: 1,
     date: "Jun 2023",
-    title: "wBuy - Lojas virtuais",
+    title: "wBuy - Lojas virtuais - Analista de suporte computacional",
     office: "Analista de suporte computacional",
     description: "Atuando como analista de suporte computacional, prestando suporte à plataforma de ecommerce desenvolvida por wBuy. Nessa experiência desenvolvi de forma sólida a Soft Skill de comunicação, uma vez que, para um bom atendimento, é imprescindível uma boa comunicação e clareza nas palavras. Além disso, pude aprender conceitos voltados a infraestrutura, redes de computadores, e consultas a APIs."
-  }
+	},
 ]
 
 function Experiences() {

@@ -4,11 +4,13 @@ import ProjectCard from "./ProjectCard";
 
 type ProjectListProps = {
   metadata: {
-    descricao: string;
-    imagem_do_projeto: {
-      url: string;
+		imagem_do_projeto: {
+			url: string;
     };
     tags: string;
+		link_projeto: string;
+		link_repositorio: string;
+		descricao: string;
   };
   slug: string;
   title: string;
@@ -17,11 +19,11 @@ type ProjectListProps = {
 function ProjectList() {
   const [projects, setProjects] = useState<ProjectListProps[]>([]);
   useEffect(() => {
-    getProjects().then((data) => setProjects(data));
+		getProjects().then((data) => setProjects(data));
   }, []);
   return (
     <section className="bg-dark-600" id="projetos">
-      <div className="max-w-screen-xl mx-auto p-8">
+      <div className="max-w-screen-xl mx-auto p-8 md:px-0">
         <h1 className="text-center text-2xl mb-4 text-white font-bold">
           Projetos
         </h1>
@@ -32,8 +34,9 @@ function ProjectList() {
               projectName={ project.title }
               tags={ (project.metadata.tags).split(',').map(tag => tag.trim()) }
               image={ project.metadata.imagem_do_projeto.url }
-							slug={project.slug}
 							descricao={project.metadata.descricao}
+							link_projeto={ project.metadata.link_projeto }
+							link_repositorio={ project.metadata.link_repositorio }
             />
           ))}
         </div>

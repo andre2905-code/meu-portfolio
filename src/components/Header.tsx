@@ -31,7 +31,7 @@ function Header() {
         ref={ headerRef }
       >
         <div className="m-auto flex justify-between w-full max-w-screen-xl bg-opacity">
-					<p className="text-blue-500 font-bold text-lg">@andresreis</p>
+					<a href="/" className="text-blue-500 font-bold text-lg">@andresreis</a>
 					<nav className="flex gap-6 text-white font-bold">
 						<a
 							href="#sobre"
