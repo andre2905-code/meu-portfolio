@@ -28,8 +28,8 @@ function SoftSkills() {
   return (
     <div className="">
       <div>
-        <h3 className="text-xl font-bold mb-4">Soft Skills</h3>
-        <div className="flex flex-wrap gap-4">
+        <h3 className="text-xl font-bold mb-4 text-center md:text-left">Soft Skills</h3>
+        <div className="flex flex-wrap gap-4 justify-center md:justify-normal">
           {softSkills.map((skill) => (
             <Skill key={ skill.title } title={ skill.title } />
           ))}

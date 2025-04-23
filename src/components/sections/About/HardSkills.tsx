@@ -54,8 +54,8 @@ function HardSkills() {
   return (
     <div className="mb-8">
       <div>
-        <h3 className="text-xl font-bold mb-4">Hard Skills</h3>
-        <div className="flex flex-wrap gap-4 mb-8">
+        <h3 className="text-xl font-bold mb-4 text-center md:text-left">Hard Skills</h3>
+        <div className="flex flex-wrap gap-4 mb-8 justify-center md:justify-normal">
           {hardSkills.map((skill) => (
             <Skill key={skill.title} title={skill.title} Icon={skill.icon} />
           ))}

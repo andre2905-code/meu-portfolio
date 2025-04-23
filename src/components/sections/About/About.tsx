@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="bg-dark-900">
       <section className="max-w-screen-xl mx-auto p-8 text-white">
-        <div className="flex justify-between mb-24">
+        <div className="flex flex-col items-center md:flex-row md:items-start md:justify-between mb-24">
           <h2 className="text-center text-3xl mb-4 text-white font-bold">
             Sobre mim
           </h2>
@@ -18,7 +18,7 @@ function About() {
           </div>
         </div>  
 
-        <div className="flex justify-between">
+        <div className="flex flex-col items-center md:flex-row md:items-start md:justify-between">
           <h1 className="text-center text-3xl text-white font-bold">
             Habilidades
           </h1>

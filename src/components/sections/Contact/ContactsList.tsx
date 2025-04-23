@@ -30,7 +30,7 @@ const contacts = [
 
 function ContactsList() {
   return (
-    <div className="flex justify-center gap-14">
+    <div className="flex flex-col gap-14 md:flex-row md:justify-center">
       {contacts.map((contact) => (
         <a href={ contact.link } key={contact.title} target="_blank" className="flex flex-col items-center gap-2">
           <contact.Icon size={ 28 } color="#1EB720" />
