@@ -9,7 +9,7 @@ function About() {
           <h2 className="text-center text-3xl mb-4 text-white font-bold">
             Sobre mim
           </h2>
-          <div className="max-w-4xl w-3/4 ">
+          <div className="max-w-4xl w-3/4 text-justify md:text-left">
             <p>
               Olá! Sou André Reis, desenvolvedor web apaixonado por tecnologia. Tenho certificações em JavaScript, HTML5 e CSS3, além de curta experiência com PHP, SQL e React.js. Atualmente, me aprofundo em Laravel e React.js no desenvolvimento de interfaces escaláveis.
               <br /><br />
